@@ -1,0 +1,15 @@
+# -*- coding utf-8 -*-
+name = input('请输入名字:')
+height = float(input('请输入身高(米):'))
+weight = float(input('请输入体重(kg):'))
+bim = weight / (height)**2
+if bim < 18.5:
+    print(('%s身高%.2f米，体重%.2fkg。%s的BMI指数为%.2f,过轻.' %(name,height,weight,name,bim)))
+elif 18.5 <= bim <=25:
+    print('%s身高%.2f米，体重%.2fkg。%s的BMI指数为%.2f,正常.' %(name,height,weight,name,bim))
+elif 25 <= bim < 28:
+    print('%s身高%.2f米，体重%.2fkg。%s的BMI指数为%.2f,过重.' %(name,height,weight,name,bim))
+elif 28 <= bim <32:
+    print('%s身高%.2f米，体重%.2fkg。%s的BMI指数为%.2f,肥胖.' %(name,height,weight,name,bim))
+else:
+    print('%s身高%.2f米，体重%.2fkg。%s的BMI指数为%.2f,严重肥胖.' %(name,height,weight,name,bim))    
